@@ -1,15 +1,15 @@
- name: Import Issues from CSV
+name: Import Issues from CSV
 
-   on:
-     workflow_dispatch:
+on:
+  workflow_dispatch:
 
-   jobs:
-     import:
-       runs-on: ubuntu-latest
-       steps:
-         - uses: actions/checkout@v4
-         - name: Import issues from CSV
-           uses: jhutchings1/github-issues-csv-importer@v1
-           with:
-             csv_file: ./github-issues.csv
-             repo_token: ${{ secrets.GITHUB_TOKEN }}
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Import issues from CSV
+        uses: jhutchings1/github-issues-csv-importer@v1
+        with:
+          csv_file: ./github-issues.csv
+          repo_token: ${{ secrets.GITHUB_TOKEN }} name: Import Issues from CSV
