@@ -1,0 +1,149 @@
+Title,Body,Labels,Assignees
+1 Project Planning and Setup,"Conduct user interviews, define workflows, and set up AWS/Odoo environments.",Planning,Epic,High Priority,dbergvinson
+1.1 Conduct user interviews with target farms,,Planning,Subtask,High Priority,dbergvinson
+1.1.1 Identify 5-7 representative California specialty crop farms,,Planning,Subtask,High Priority,dbergvinson
+1.1.2 Prepare interview questions focused on workflows, pain points, and compliance,,Planning,Subtask,High Priority,dbergvinson
+1.1.3 Schedule and conduct interviews (in-person/remote),,Planning,Subtask,High Priority,dbergvinson
+1.1.4 Summarize findings and extract key requirements,,Planning,Subtask,High Priority,dbergvinson
+1.2 Map critical workflows and pain points,,Planning,Subtask,High Priority,dbergvinson
+1.2.1 Document current manual and digital workflows for each farm,,Planning,Subtask,High Priority,dbergvinson
+1.2.2 Identify bottlenecks and regulatory pain points,,Planning,Subtask,High Priority,dbergvinson
+1.2.3 Create workflow diagrams for core processes (field, inventory, compliance, labor),,Planning,Subtask,High Priority,dbergvinson
+1.3 Develop data schema for core entities,,Planning,Subtask,High Priority,dbergvinson
+1.3.1 Define entities: fields, crops, inventory, financials, compliance, labor, equipment,,Planning,Subtask,High Priority,dbergvinson
+1.3.2 Design relational schema for Odoo ERP integration,,Planning,Subtask,High Priority,dbergvinson
+1.3.2.1 Research Odoo core data model and ORM structure,,Planning,Subtask,High Priority,dbergvinson
+1.3.2.2 Identify relevant Odoo modules (Inventory, Accounting, HR, Project, Field Service, IoT, Compliance),,Planning,Subtask,High Priority,dbergvinson
+1.3.2.3 Map farm management entities to Odoo models (fields, crops, inventory, financials, compliance, labor, equipment),,Planning,Subtask,High Priority,dbergvinson
+1.3.2.4 Document required customizations for each module (fields, relationships, workflows),,Planning,Subtask,High Priority,dbergvinson
+1.3.2.5 Design custom models for farm-specific entities not covered by Odoo core,,Planning,Subtask,High Priority,dbergvinson
+1.3.2.6 Draft ER diagrams for all core and custom entities,,Planning,Subtask,High Priority,dbergvinson
+1.3.2.7 Review schema with Odoo experts and farm stakeholders,,Planning,Subtask,High Priority,dbergvinson
+1.3.2.8 Prototype schema in Odoo development environment,,Planning,Subtask,High Priority,dbergvinson
+1.3.2.9 Test integration with Inventory, Accounting, HR, and Compliance modules,,Planning,Subtask,High Priority,dbergvinson
+1.3.2.10 Iterate schema based on test results and feedback,,Planning,Subtask,High Priority,dbergvinson
+1.3.2.11 Document final schema and adaptation steps for development team,,Planning,Subtask,High Priority,dbergvinson
+1.3.3 Review schema with stakeholders for completeness,,Planning,Subtask,High Priority,dbergvinson
+1.4 Set up AWS environment and CI/CD pipeline,,Planning,Subtask,High Priority,dbergvinson
+1.4.1 Provision AWS Amplify, RDS, DynamoDB, S3, Lambda, IoT Core, SageMaker,,Planning,Subtask,High Priority,dbergvinson
+1.4.2 Configure IAM roles and security policies,,Planning,Subtask,High Priority,dbergvinson
+1.4.3 Set up CI/CD pipeline for automated deployment,,Planning,Subtask,High Priority,dbergvinson
+1.5 Set up Odoo ERP base framework,,Planning,Subtask,High Priority,dbergvinson
+1.5.1 Install and configure Odoo on AWS infrastructure,,Planning,Subtask,High Priority,dbergvinson
+1.5.2 Create custom modules for farm management,,Planning,Subtask,High Priority,dbergvinson
+1.5.3 Integrate Odoo authentication with AWS Cognito/Amplify,,Planning,Subtask,High Priority,dbergvinson
+1.6 Create user authentication and role management,,Planning,Subtask,High Priority,dbergvinson
+1.6.1 Define user roles (owner, manager, worker, buyer, regulator),,Planning,Subtask,High Priority,dbergvinson
+1.6.2 Implement authentication (iOS, web, Odoo),,Planning,Subtask,High Priority,dbergvinson
+1.6.3 Set up role-based access control for all modules,,Planning,Subtask,High Priority,dbergvinson
+2 Field and Crop Management Module,"Develop GIS-based field mapping, crop planning, and mobile data collection.",Field,Epic,High Priority,dbergvinson
+2.1 Develop field mapping module with GIS integration,,Field,Subtask,High Priority,dbergvinson
+2.1.1 Select GIS library/SDK for iOS and web integration,,Field,Subtask,High Priority,dbergvinson
+2.1.2 Design UI for field boundary drawing and editing,,Field,Subtask,High Priority,dbergvinson
+2.1.3 Implement shapefile/GeoJSON import/export,,Field,Subtask,High Priority,dbergvinson
+2.1.4 Integrate with Odoo backend for field data storage,,Field,Subtask,High Priority,dbergvinson
+2.2 Build crop planning module with CA-specific templates,,Field,Subtask,High Priority,dbergvinson
+2.2.1 Develop crop template library for grapes, almonds, pistachios, berries, tomatoes,,Field,Subtask,High Priority,dbergvinson
+2.2.2 Implement crop rotation and historical yield tracking,,Field,Subtask,High Priority,dbergvinson
+2.2.3 Enable scheduling of crop-specific tasks and interventions,,Field,Subtask,High Priority,dbergvinson
+2.3 Create mobile data collection forms with offline capability,,Field,Subtask,High Priority,dbergvinson
+2.3.1 Design mobile-first UI for iOS (large touch targets, sunlight readable),,Field,Subtask,High Priority,dbergvinson
+2.3.2 Implement SQLite/PWA offline data storage,,Field,Subtask,High Priority,dbergvinson
+2.3.3 Develop sync protocol for intermittent connectivity,,Field,Subtask,High Priority,dbergvinson
+2.3.4 Support photo, voice, and barcode data entry,,Field,Subtask,High Priority,dbergvinson
+2.4 Implement IoT data ingestion for sensors,,Field,Subtask,High Priority,dbergvinson
+2.4.1 Integrate with AWS IoT Core for sensor data,,Field,Subtask,High Priority,dbergvinson
+2.4.2 Develop data pipeline for soil moisture and irrigation sensors,,Field,Subtask,High Priority,dbergvinson
+2.4.3 Store and visualize sensor data in field dashboard,,Field,Subtask,High Priority,dbergvinson
+2.5 Integrate weather APIs,,Field,Subtask,High Priority,dbergvinson
+2.5.1 Select and integrate weather data provider (historical/forecast),,Field,Subtask,High Priority,dbergvinson
+2.5.2 Display weather data in field and crop dashboards,,Field,Subtask,High Priority,dbergvinson
+2.5.3 Enable weather-triggered task scheduling (e.g., irrigation, spraying),,Field,Subtask,High Priority,dbergvinson
+3 Inventory and Financial Management Module,"Develop inventory tracking, purchase/sales order management, and financial dashboards.",Inventory,Epic,High Priority,dbergvinson
+3.1 Develop inventory tracking system by crop/variety,,Inventory,Subtask,High Priority,dbergvinson
+3.1.1 Design inventory data model for Odoo integration,,Inventory,Subtask,High Priority,dbergvinson
+3.1.2 Implement real-time tracking by crop, variety, and quality,,Inventory,Subtask,High Priority,dbergvinson
+3.1.3 Enable storage location and buyer portal features,,Inventory,Subtask,High Priority,dbergvinson
+3.2 Build purchase and sales order management,,Inventory,Subtask,High Priority,dbergvinson
+3.2.1 Develop purchase order creation and approval workflow,,Inventory,Subtask,High Priority,dbergvinson
+3.2.2 Implement sales order management and buyer notifications,,Inventory,Subtask,High Priority,dbergvinson
+3.2.3 Integrate with Stripe for payment processing,,Inventory,Subtask,High Priority,dbergvinson
+3.3 Create sales portal for buyers,,Inventory,Subtask,High Priority,dbergvinson
+3.3.1 Design buyer-facing UI for inventory visibility,,Inventory,Subtask,High Priority,dbergvinson
+3.3.2 Enable order placement and status tracking,,Inventory,Subtask,High Priority,dbergvinson
+3.3.3 Implement secure buyer authentication and permissions,,Inventory,Subtask,High Priority,dbergvinson
+3.4 Implement Stripe integration for payments,,Inventory,Subtask,High Priority,dbergvinson
+3.4.1 Set up Stripe account and API keys,,Inventory,Subtask,High Priority,dbergvinson
+3.4.2 Integrate Stripe with Odoo and sales portal,,Inventory,Subtask,High Priority,dbergvinson
+3.4.3 Test payment flows and error handling,,Inventory,Subtask,High Priority,dbergvinson
+3.5 Design financial reporting dashboard,,Inventory,Subtask,High Priority,dbergvinson
+3.5.1 Define key financial metrics (P&L by field/crop, cost tracking),,Inventory,Subtask,High Priority,dbergvinson
+3.5.2 Develop dashboard UI for real-time reporting,,Inventory,Subtask,High Priority,dbergvinson
+3.5.3 Enable export of financial reports for compliance and benchmarking,,Inventory,Subtask,High Priority,dbergvinson
+4 Compliance and Labor Management Module,"Build compliance reporting, labor management, and document management features.",Compliance,Epic,High Priority,dbergvinson
+4.1 Build compliance reporting modules for water, fertilizer, pesticides,,Compliance,Subtask,High Priority,dbergvinson
+4.1.1 Document California compliance requirements (SGMA, ILRP, PUR, SWRCB, CCOF, FSMA),,Compliance,Subtask,High Priority,dbergvinson
+4.1.2 Design compliance data models for each reporting area,,Compliance,Subtask,High Priority,dbergvinson
+4.1.3 Implement automated data capture from field and inventory modules,,Compliance,Subtask,High Priority,dbergvinson
+4.1.4 Develop report generation and electronic submission features,,Compliance,Subtask,High Priority,dbergvinson
+4.1.5 Integrate with CalAgPermits, water boards, and other regulatory APIs,,Compliance,Subtask,High Priority,dbergvinson
+4.2 Develop labor management system with scheduling and compliance tracking,,Compliance,Subtask,High Priority,dbergvinson
+4.2.1 Design labor data model (worker, schedule, compliance docs),,Compliance,Subtask,High Priority,dbergvinson
+4.2.2 Implement worker scheduling and time tracking UI,,Compliance,Subtask,High Priority,dbergvinson
+4.2.3 Enable compliance documentation (training, safety, H-2A),,Compliance,Subtask,High Priority,dbergvinson
+4.2.4 Develop productivity and cost reporting dashboards,,Compliance,Subtask,High Priority,dbergvinson
+4.3 Implement document management for regulatory submissions,,Compliance,Subtask,High Priority,dbergvinson
+4.3.1 Design secure document storage and access controls,,Compliance,Subtask,High Priority,dbergvinson
+4.3.2 Enable upload and tagging of compliance documents,,Compliance,Subtask,High Priority,dbergvinson
+4.3.3 Implement audit log for document access and changes,,Compliance,Subtask,High Priority,dbergvinson
+4.4 Create notifications for compliance deadlines,,Compliance,Subtask,High Priority,dbergvinson
+4.4.1 Define compliance deadlines for all reporting areas,,Compliance,Subtask,High Priority,dbergvinson
+4.4.2 Implement notification system (email, SMS, in-app),,Compliance,Subtask,High Priority,dbergvinson
+4.4.3 Enable user-configurable reminders and escalation,,Compliance,Subtask,High Priority,dbergvinson
+4.5 Design dashboard for labor productivity metrics,,Compliance,Subtask,High Priority,dbergvinson
+4.5.1 Define key labor metrics (hours, cost, productivity),,Compliance,Subtask,High Priority,dbergvinson
+4.5.2 Develop dashboard UI for real-time labor reporting,,Compliance,Subtask,High Priority,dbergvinson
+4.5.3 Enable export of labor reports for compliance and benchmarking,,Compliance,Subtask,High Priority,dbergvinson
+5 Equipment Integration and IoT Module,"Integrate with equipment APIs, build telemetry dashboards, and add maintenance tracking.",Equipment,Epic,Medium Priority,dbergvinson
+5.1 Integrate with John Deere and Trimble APIs,,Equipment,Subtask,Medium Priority,dbergvinson
+5.1.1 Document equipment inventory and connectivity options,,Equipment,Subtask,Medium Priority,dbergvinson
+5.1.2 Develop multi-protocol gateway for equipment data,,Equipment,Subtask,Medium Priority,dbergvinson
+5.1.3 Implement direct API integration for supported equipment,,Equipment,Subtask,Medium Priority,dbergvinson
+5.1.4 Develop hardware bridge for legacy equipment,,Equipment,Subtask,Medium Priority,dbergvinson
+5.2 Build telemetry dashboards for equipment monitoring,,Equipment,Subtask,Medium Priority,dbergvinson
+5.2.1 Design equipment telemetry data model,,Equipment,Subtask,Medium Priority,dbergvinson
+5.2.2 Develop real-time dashboard UI for equipment status,,Equipment,Subtask,Medium Priority,dbergvinson
+5.2.3 Enable alerting for equipment faults and maintenance needs,,Equipment,Subtask,Medium Priority,dbergvinson
+5.3 Add fuel and maintenance tracking,,Equipment,Subtask,Medium Priority,dbergvinson
+5.3.1 Implement fuel usage logging and reporting,,Equipment,Subtask,Medium Priority,dbergvinson
+5.3.2 Develop maintenance scheduling and history tracking,,Equipment,Subtask,Medium Priority,dbergvinson
+5.3.3 Integrate with equipment vendor APIs for parts and service,,Equipment,Subtask,Medium Priority,dbergvinson
+5.4 Begin beta testing with target farms,,Equipment,Subtask,Medium Priority,dbergvinson
+5.4.1 Select 2-3 pilot farms for beta testing,,Equipment,Subtask,Medium Priority,dbergvinson
+5.4.2 Deploy equipment integration modules to pilot farms,,Equipment,Subtask,Medium Priority,dbergvinson
+5.4.3 Collect feedback on usability and integration gaps,,Equipment,Subtask,Medium Priority,dbergvinson
+5.5 Collect feedback and implement changes,,Equipment,Subtask,Medium Priority,dbergvinson
+5.5.1 Summarize beta feedback and prioritize changes,,Equipment,Subtask,Medium Priority,dbergvinson
+5.5.2 Implement high-priority fixes and improvements,,Equipment,Subtask,Medium Priority,dbergvinson
+5.5.3 Prepare for full-scale launch,,Equipment,Subtask,Medium Priority,dbergvinson
+6 Urth Agriculture and Final Launch,"Integrate Urth Agriculture catalog, refine UI, and launch MVP.",Launch,Epic,Medium Priority,dbergvinson
+6.1 Integrate Urth Agriculture product catalog,,Launch,Subtask,Medium Priority,dbergvinson
+6.1.1 Obtain Urth Agriculture product API/documentation,,Launch,Subtask,Medium Priority,dbergvinson
+6.1.2 Develop integration for product catalog and application scheduling,,Launch,Subtask,Medium Priority,dbergvinson
+6.1.3 Enable results tracking (BRIX, etc.) and reorder management,,Launch,Subtask,Medium Priority,dbergvinson
+6.2 Implement order management for inputs/services,,Launch,Subtask,Medium Priority,dbergvinson
+6.2.1 Design order management UI for inputs and services,,Launch,Subtask,Medium Priority,dbergvinson
+6.2.2 Integrate with inventory and financial modules,,Launch,Subtask,Medium Priority,dbergvinson
+6.2.3 Test order workflows end-to-end,,Launch,Subtask,Medium Priority,dbergvinson
+6.3 Refine user interface based on feedback,,Launch,Subtask,Medium Priority,dbergvinson
+6.3.1 Collect UI/UX feedback from pilot users,,Launch,Subtask,Medium Priority,dbergvinson
+6.3.2 Prioritize and implement UI improvements,,Launch,Subtask,Medium Priority,dbergvinson
+6.3.3 Conduct usability testing for critical workflows,,Launch,Subtask,Medium Priority,dbergvinson
+6.4 Develop training materials and knowledge base,,Launch,Subtask,Medium Priority,dbergvinson
+6.4.1 Document all core workflows and modules,,Launch,Subtask,Medium Priority,dbergvinson
+6.4.2 Create video and written tutorials for onboarding,,Launch,Subtask,Medium Priority,dbergvinson
+6.4.3 Build searchable knowledge base for support,,Launch,Subtask,Medium Priority,dbergvinson
+6.5 Launch MVP with pilot farms,,Launch,Subtask,Medium Priority,dbergvinson
+6.5.1 Select 5 pilot farms across diverse crops,,Launch,Subtask,Medium Priority,dbergvinson
+6.5.2 Deploy MVP and monitor usage,,Launch,Subtask,Medium Priority,dbergvinson
+6.5.3 Collect post-launch feedback and plan next phase,,Launch,Subtask,Medium Priority,dbergvinson 

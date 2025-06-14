@@ -1,0 +1,296 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Project Planning and Setup",
+      "description": "Conduct user interviews, define workflows, and set up AWS/Odoo environments.",
+      "status": "pending",
+      "priority": "high",
+      "subtasks": [
+        { "id": "1.1", "title": "Conduct user interviews with target farms", "status": "pending",
+          "subtasks": [
+            { "id": "1.1.1", "title": "Identify 5-7 representative California specialty crop farms", "status": "pending" },
+            { "id": "1.1.2", "title": "Prepare interview questions focused on workflows, pain points, and compliance", "status": "pending" },
+            { "id": "1.1.3", "title": "Schedule and conduct interviews (in-person/remote)", "status": "pending" },
+            { "id": "1.1.4", "title": "Summarize findings and extract key requirements", "status": "pending" }
+          ]
+        },
+        { "id": "1.2", "title": "Map critical workflows and pain points", "status": "pending",
+          "subtasks": [
+            { "id": "1.2.1", "title": "Document current manual and digital workflows for each farm", "status": "pending" },
+            { "id": "1.2.2", "title": "Identify bottlenecks and regulatory pain points", "status": "pending" },
+            { "id": "1.2.3", "title": "Create workflow diagrams for core processes (field, inventory, compliance, labor)", "status": "pending" }
+          ]
+        },
+        { "id": "1.3", "title": "Develop data schema for core entities", "status": "pending",
+          "subtasks": [
+            { "id": "1.3.1", "title": "Define entities: fields, crops, inventory, financials, compliance, labor, equipment", "status": "pending" },
+            { "id": "1.3.2", "title": "Design relational schema for Odoo ERP integration", "status": "pending",
+              "subtasks": [
+                { "id": "1.3.2.1", "title": "Research Odoo core data model and ORM structure", "status": "pending" },
+                { "id": "1.3.2.2", "title": "Identify relevant Odoo modules (Inventory, Accounting, HR, Project, Field Service, IoT, Compliance)", "status": "pending" },
+                { "id": "1.3.2.3", "title": "Map farm management entities to Odoo models (fields, crops, inventory, financials, compliance, labor, equipment)", "status": "pending" },
+                { "id": "1.3.2.4", "title": "Document required customizations for each module (fields, relationships, workflows)", "status": "pending" },
+                { "id": "1.3.2.5", "title": "Design custom models for farm-specific entities not covered by Odoo core", "status": "pending" },
+                { "id": "1.3.2.6", "title": "Draft ER diagrams for all core and custom entities", "status": "pending" },
+                { "id": "1.3.2.7", "title": "Review schema with Odoo experts and farm stakeholders", "status": "pending" },
+                { "id": "1.3.2.8", "title": "Prototype schema in Odoo development environment", "status": "pending" },
+                { "id": "1.3.2.9", "title": "Test integration with Inventory, Accounting, HR, and Compliance modules", "status": "pending" },
+                { "id": "1.3.2.10", "title": "Iterate schema based on test results and feedback", "status": "pending" },
+                { "id": "1.3.2.11", "title": "Document final schema and adaptation steps for development team", "status": "pending" }
+              ]
+            },
+            { "id": "1.3.3", "title": "Review schema with stakeholders for completeness", "status": "pending" }
+          ]
+        },
+        { "id": "1.4", "title": "Set up AWS environment and CI/CD pipeline", "status": "pending",
+          "subtasks": [
+            { "id": "1.4.1", "title": "Provision AWS Amplify, RDS, DynamoDB, S3, Lambda, IoT Core, SageMaker", "status": "pending" },
+            { "id": "1.4.2", "title": "Configure IAM roles and security policies", "status": "pending" },
+            { "id": "1.4.3", "title": "Set up CI/CD pipeline for automated deployment", "status": "pending" }
+          ]
+        },
+        { "id": "1.5", "title": "Set up Odoo ERP base framework", "status": "pending",
+          "subtasks": [
+            { "id": "1.5.1", "title": "Install and configure Odoo on AWS infrastructure", "status": "pending" },
+            { "id": "1.5.2", "title": "Create custom modules for farm management", "status": "pending" },
+            { "id": "1.5.3", "title": "Integrate Odoo authentication with AWS Cognito/Amplify", "status": "pending" }
+          ]
+        },
+        { "id": "1.6", "title": "Create user authentication and role management", "status": "pending",
+          "subtasks": [
+            { "id": "1.6.1", "title": "Define user roles (owner, manager, worker, buyer, regulator)", "status": "pending" },
+            { "id": "1.6.2", "title": "Implement authentication (iOS, web, Odoo)", "status": "pending" },
+            { "id": "1.6.3", "title": "Set up role-based access control for all modules", "status": "pending" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Field and Crop Management Module",
+      "description": "Develop GIS-based field mapping, crop planning, and mobile data collection.",
+      "status": "pending",
+      "priority": "high",
+      "subtasks": [
+        { "id": "2.1", "title": "Develop field mapping module with GIS integration", "status": "pending",
+          "subtasks": [
+            { "id": "2.1.1", "title": "Select GIS library/SDK for iOS and web integration", "status": "pending" },
+            { "id": "2.1.2", "title": "Design UI for field boundary drawing and editing", "status": "pending" },
+            { "id": "2.1.3", "title": "Implement shapefile/GeoJSON import/export", "status": "pending" },
+            { "id": "2.1.4", "title": "Integrate with Odoo backend for field data storage", "status": "pending" }
+          ]
+        },
+        { "id": "2.2", "title": "Build crop planning module with CA-specific templates", "status": "pending",
+          "subtasks": [
+            { "id": "2.2.1", "title": "Develop crop template library for grapes, almonds, pistachios, berries, tomatoes", "status": "pending" },
+            { "id": "2.2.2", "title": "Implement crop rotation and historical yield tracking", "status": "pending" },
+            { "id": "2.2.3", "title": "Enable scheduling of crop-specific tasks and interventions", "status": "pending" }
+          ]
+        },
+        { "id": "2.3", "title": "Create mobile data collection forms with offline capability", "status": "pending",
+          "subtasks": [
+            { "id": "2.3.1", "title": "Design mobile-first UI for iOS (large touch targets, sunlight readable)", "status": "pending" },
+            { "id": "2.3.2", "title": "Implement SQLite/PWA offline data storage", "status": "pending" },
+            { "id": "2.3.3", "title": "Develop sync protocol for intermittent connectivity", "status": "pending" },
+            { "id": "2.3.4", "title": "Support photo, voice, and barcode data entry", "status": "pending" }
+          ]
+        },
+        { "id": "2.4", "title": "Implement IoT data ingestion for sensors", "status": "pending",
+          "subtasks": [
+            { "id": "2.4.1", "title": "Integrate with AWS IoT Core for sensor data", "status": "pending" },
+            { "id": "2.4.2", "title": "Develop data pipeline for soil moisture and irrigation sensors", "status": "pending" },
+            { "id": "2.4.3", "title": "Store and visualize sensor data in field dashboard", "status": "pending" }
+          ]
+        },
+        { "id": "2.5", "title": "Integrate weather APIs", "status": "pending",
+          "subtasks": [
+            { "id": "2.5.1", "title": "Select and integrate weather data provider (historical/forecast)", "status": "pending" },
+            { "id": "2.5.2", "title": "Display weather data in field and crop dashboards", "status": "pending" },
+            { "id": "2.5.3", "title": "Enable weather-triggered task scheduling (e.g., irrigation, spraying)", "status": "pending" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Inventory and Financial Management Module",
+      "description": "Develop inventory tracking, purchase/sales order management, and financial dashboards.",
+      "status": "pending",
+      "priority": "high",
+      "subtasks": [
+        { "id": "3.1", "title": "Develop inventory tracking system by crop/variety", "status": "pending",
+          "subtasks": [
+            { "id": "3.1.1", "title": "Design inventory data model for Odoo integration", "status": "pending" },
+            { "id": "3.1.2", "title": "Implement real-time tracking by crop, variety, and quality", "status": "pending" },
+            { "id": "3.1.3", "title": "Enable storage location and buyer portal features", "status": "pending" }
+          ]
+        },
+        { "id": "3.2", "title": "Build purchase and sales order management", "status": "pending",
+          "subtasks": [
+            { "id": "3.2.1", "title": "Develop purchase order creation and approval workflow", "status": "pending" },
+            { "id": "3.2.2", "title": "Implement sales order management and buyer notifications", "status": "pending" },
+            { "id": "3.2.3", "title": "Integrate with Stripe for payment processing", "status": "pending" }
+          ]
+        },
+        { "id": "3.3", "title": "Create sales portal for buyers", "status": "pending",
+          "subtasks": [
+            { "id": "3.3.1", "title": "Design buyer-facing UI for inventory visibility", "status": "pending" },
+            { "id": "3.3.2", "title": "Enable order placement and status tracking", "status": "pending" },
+            { "id": "3.3.3", "title": "Implement secure buyer authentication and permissions", "status": "pending" }
+          ]
+        },
+        { "id": "3.4", "title": "Implement Stripe integration for payments", "status": "pending",
+          "subtasks": [
+            { "id": "3.4.1", "title": "Set up Stripe account and API keys", "status": "pending" },
+            { "id": "3.4.2", "title": "Integrate Stripe with Odoo and sales portal", "status": "pending" },
+            { "id": "3.4.3", "title": "Test payment flows and error handling", "status": "pending" }
+          ]
+        },
+        { "id": "3.5", "title": "Design financial reporting dashboard", "status": "pending",
+          "subtasks": [
+            { "id": "3.5.1", "title": "Define key financial metrics (P&L by field/crop, cost tracking)", "status": "pending" },
+            { "id": "3.5.2", "title": "Develop dashboard UI for real-time reporting", "status": "pending" },
+            { "id": "3.5.3", "title": "Enable export of financial reports for compliance and benchmarking", "status": "pending" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Compliance and Labor Management Module",
+      "description": "Build compliance reporting, labor management, and document management features.",
+      "status": "pending",
+      "priority": "high",
+      "subtasks": [
+        { "id": "4.1", "title": "Build compliance reporting modules for water, fertilizer, pesticides", "status": "pending",
+          "subtasks": [
+            { "id": "4.1.1", "title": "Document California compliance requirements (SGMA, ILRP, PUR, SWRCB, CCOF, FSMA)", "status": "pending" },
+            { "id": "4.1.2", "title": "Design compliance data models for each reporting area", "status": "pending" },
+            { "id": "4.1.3", "title": "Implement automated data capture from field and inventory modules", "status": "pending" },
+            { "id": "4.1.4", "title": "Develop report generation and electronic submission features", "status": "pending" },
+            { "id": "4.1.5", "title": "Integrate with CalAgPermits, water boards, and other regulatory APIs", "status": "pending" }
+          ]
+        },
+        { "id": "4.2", "title": "Develop labor management system with scheduling and compliance tracking", "status": "pending",
+          "subtasks": [
+            { "id": "4.2.1", "title": "Design labor data model (worker, schedule, compliance docs)", "status": "pending" },
+            { "id": "4.2.2", "title": "Implement worker scheduling and time tracking UI", "status": "pending" },
+            { "id": "4.2.3", "title": "Enable compliance documentation (training, safety, H-2A)", "status": "pending" },
+            { "id": "4.2.4", "title": "Develop productivity and cost reporting dashboards", "status": "pending" }
+          ]
+        },
+        { "id": "4.3", "title": "Implement document management for regulatory submissions", "status": "pending",
+          "subtasks": [
+            { "id": "4.3.1", "title": "Design secure document storage and access controls", "status": "pending" },
+            { "id": "4.3.2", "title": "Enable upload and tagging of compliance documents", "status": "pending" },
+            { "id": "4.3.3", "title": "Implement audit log for document access and changes", "status": "pending" }
+          ]
+        },
+        { "id": "4.4", "title": "Create notifications for compliance deadlines", "status": "pending",
+          "subtasks": [
+            { "id": "4.4.1", "title": "Define compliance deadlines for all reporting areas", "status": "pending" },
+            { "id": "4.4.2", "title": "Implement notification system (email, SMS, in-app)", "status": "pending" },
+            { "id": "4.4.3", "title": "Enable user-configurable reminders and escalation", "status": "pending" }
+          ]
+        },
+        { "id": "4.5", "title": "Design dashboard for labor productivity metrics", "status": "pending",
+          "subtasks": [
+            { "id": "4.5.1", "title": "Define key labor metrics (hours, cost, productivity)", "status": "pending" },
+            { "id": "4.5.2", "title": "Develop dashboard UI for real-time labor reporting", "status": "pending" },
+            { "id": "4.5.3", "title": "Enable export of labor reports for compliance and benchmarking", "status": "pending" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Equipment Integration and IoT Module",
+      "description": "Integrate with equipment APIs, build telemetry dashboards, and add maintenance tracking.",
+      "status": "pending",
+      "priority": "medium",
+      "subtasks": [
+        { "id": "5.1", "title": "Integrate with John Deere and Trimble APIs", "status": "pending",
+          "subtasks": [
+            { "id": "5.1.1", "title": "Document equipment inventory and connectivity options", "status": "pending" },
+            { "id": "5.1.2", "title": "Develop multi-protocol gateway for equipment data", "status": "pending" },
+            { "id": "5.1.3", "title": "Implement direct API integration for supported equipment", "status": "pending" },
+            { "id": "5.1.4", "title": "Develop hardware bridge for legacy equipment", "status": "pending" }
+          ]
+        },
+        { "id": "5.2", "title": "Build telemetry dashboards for equipment monitoring", "status": "pending",
+          "subtasks": [
+            { "id": "5.2.1", "title": "Design equipment telemetry data model", "status": "pending" },
+            { "id": "5.2.2", "title": "Develop real-time dashboard UI for equipment status", "status": "pending" },
+            { "id": "5.2.3", "title": "Enable alerting for equipment faults and maintenance needs", "status": "pending" }
+          ]
+        },
+        { "id": "5.3", "title": "Add fuel and maintenance tracking", "status": "pending",
+          "subtasks": [
+            { "id": "5.3.1", "title": "Implement fuel usage logging and reporting", "status": "pending" },
+            { "id": "5.3.2", "title": "Develop maintenance scheduling and history tracking", "status": "pending" },
+            { "id": "5.3.3", "title": "Integrate with equipment vendor APIs for parts and service", "status": "pending" }
+          ]
+        },
+        { "id": "5.4", "title": "Begin beta testing with target farms", "status": "pending",
+          "subtasks": [
+            { "id": "5.4.1", "title": "Select 2-3 pilot farms for beta testing", "status": "pending" },
+            { "id": "5.4.2", "title": "Deploy equipment integration modules to pilot farms", "status": "pending" },
+            { "id": "5.4.3", "title": "Collect feedback on usability and integration gaps", "status": "pending" }
+          ]
+        },
+        { "id": "5.5", "title": "Collect feedback and implement changes", "status": "pending",
+          "subtasks": [
+            { "id": "5.5.1", "title": "Summarize beta feedback and prioritize changes", "status": "pending" },
+            { "id": "5.5.2", "title": "Implement high-priority fixes and improvements", "status": "pending" },
+            { "id": "5.5.3", "title": "Prepare for full-scale launch", "status": "pending" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Urth Agriculture and Final Launch",
+      "description": "Integrate Urth Agriculture catalog, refine UI, and launch MVP.",
+      "status": "pending",
+      "priority": "medium",
+      "subtasks": [
+        { "id": "6.1", "title": "Integrate Urth Agriculture product catalog", "status": "pending",
+          "subtasks": [
+            { "id": "6.1.1", "title": "Obtain Urth Agriculture product API/documentation", "status": "pending" },
+            { "id": "6.1.2", "title": "Develop integration for product catalog and application scheduling", "status": "pending" },
+            { "id": "6.1.3", "title": "Enable results tracking (BRIX, etc.) and reorder management", "status": "pending" }
+          ]
+        },
+        { "id": "6.2", "title": "Implement order management for inputs/services", "status": "pending",
+          "subtasks": [
+            { "id": "6.2.1", "title": "Design order management UI for inputs and services", "status": "pending" },
+            { "id": "6.2.2", "title": "Integrate with inventory and financial modules", "status": "pending" },
+            { "id": "6.2.3", "title": "Test order workflows end-to-end", "status": "pending" }
+          ]
+        },
+        { "id": "6.3", "title": "Refine user interface based on feedback", "status": "pending",
+          "subtasks": [
+            { "id": "6.3.1", "title": "Collect UI/UX feedback from pilot users", "status": "pending" },
+            { "id": "6.3.2", "title": "Prioritize and implement UI improvements", "status": "pending" },
+            { "id": "6.3.3", "title": "Conduct usability testing for critical workflows", "status": "pending" }
+          ]
+        },
+        { "id": "6.4", "title": "Develop training materials and knowledge base", "status": "pending",
+          "subtasks": [
+            { "id": "6.4.1", "title": "Document all core workflows and modules", "status": "pending" },
+            { "id": "6.4.2", "title": "Create video and written tutorials for onboarding", "status": "pending" },
+            { "id": "6.4.3", "title": "Build searchable knowledge base for support", "status": "pending" }
+          ]
+        },
+        { "id": "6.5", "title": "Launch MVP with pilot farms", "status": "pending",
+          "subtasks": [
+            { "id": "6.5.1", "title": "Select 5 pilot farms across diverse crops", "status": "pending" },
+            { "id": "6.5.2", "title": "Deploy MVP and monitor usage", "status": "pending" },
+            { "id": "6.5.3", "title": "Collect post-launch feedback and plan next phase", "status": "pending" }
+          ]
+        }
+      ]
+    }
+  ]
+} 

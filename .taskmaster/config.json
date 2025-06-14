@@ -1,0 +1,16 @@
+{
+  "projectName": "Profitable Farmer",
+  "projectDescription": "Farm management system with a strong financial backbone, leveraging Odoo ERP and tailored for California specialty crops and compliance.",
+  "projectVersion": "0.1.0",
+  "authorName": "",
+  "ai": {
+    "mainModel": "gpt-4-turbo",
+    "researchModel": "gpt-4-turbo",
+    "fallbackModel": "gpt-3.5-turbo",
+    "maxTokens": 4096,
+    "temperature": 0.7
+  },
+  "loggingLevel": "info",
+  "defaultPriority": "medium",
+  "defaultNumSubtasks": 5
+} 
