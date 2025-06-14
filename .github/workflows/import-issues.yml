@@ -12,4 +12,4 @@ jobs:
         uses: jhutchings1/github-issues-csv-importer@v1
         with:
           csv_file: ./github-issues.csv
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
